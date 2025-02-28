@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квест для Алечки милашкиной 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="level-1" class="level">
+            <h1>Шаг 1: Когда мы начали встречаться, милая? 💖</h1>
+            <p>Выбери правильную дату:</p>
+            <button onclick="checkAnswer(1, 0)">26.05.2022</button>
+            <button onclick="checkAnswer(1, 1)">15.02.2023</button>
+            <button onclick="checkAnswer(1, 2)">30.04.2023</button>
+        </div>
+
+        <div id="level-2" class="level hidden">
+            <h1>Шаг 2: Где был наш первый поцелуй, зайчик? 😘</h1>
+            <p>Вспомни тот момент:</p>
+            <button onclick="checkAnswer(2, 0)">На Патриках</button>
+            <button onclick="checkAnswer(2, 1)">В кафе</button>
+            <button onclick="checkAnswer(2, 2)">Дома</button>
+        </div>
+
+        <div id="level-3" class="level hidden">
+            <h1>Шаг 3: Мой любимый цвет, котёнок? 🌸</h1>
+            <p>Угадай, какой я люблю:</p>
+            <button onclick="checkAnswer(3, 0)">Синий</button>
+            <button onclick="checkAnswer(3, 1)">Красный</button>
+            <button onclick="checkAnswer(3, 2)">Зелёный</button>
+        </div>
+
+        <div id="level-4" class="level hidden">
+            <h1>Шаг 4: Что я подарил тебе на первый день рождения, солнышко? 🎁</h1>
+            <p>Вспомни мой подарок:</p>
+            <button onclick="checkAnswer(4, 0)">Цветы</button>
+            <button onclick="checkAnswer(4, 1)">Ипхон</button>
+            <button onclick="checkAnswer(4, 2)">Книгу</button>
+        </div>
+
+        <div id="level-5" class="level hidden">
+            <h1>Шаг 5: Наше любимое занятие, моя радость? 🌟</h1>
+            <p>Что мы обожаем делать вместе?</p>
+            <button onclick="checkAnswer(5, 0)">Смотреть фильмы и гулять</button>
+            <button onclick="checkAnswer(5, 1)">Гулять</button>
+            <button onclick="checkAnswer(5, 2)">Готовить</button>
+        </div>
+
+        <div id="level-6" class="level hidden">
+            <h1>Шаг 6: Где проведём свидание, мой ангел? 💞</h1>
+            <p>Выбери место для нас:</p>
+            <button onclick="chooseOption(6, 'outdoor', 'Прогулка в парке и пикник')">На улице: Прогулка и пикник</button>
+            <button onclick="chooseOption(6, 'indoor', 'Ужин в ресторане и кино')">В помещении: Ужин и кино</button>
+        </div>
+
+        <div id="level-7" class="level hidden">
+            <h1>Шаг 7: Как закончим, моя любовь? 💋</h1>
+            <p>Последний штрих нашего дня:</p>
+            <button onclick="chooseOption(7, 'outdoor', 'Фейерверк')">На улице: Фейерверк</button>
+            <button onclick="chooseOption(7, 'indoor', 'Танцы дома')">В помещении: Танцы дома</button>
+        </div>
+
+        <div id="result" class="level hidden">
+            <h1>Наше свидание, Квоккочка! 💕</h1>
+            <p id="date-summary"></p>
+            <img src="https://media.giphy.com/media/11ISwbgCxEzMyY/giphy.gif" alt="Милые котики" class="cats-gif">
+            <button onclick="restartGame()">Сыграть ещё раз, милая? 😘</button>
+        </div>
+
+        <div id="fireworks" class="fireworks hidden">
+            <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg" alt="Салют" class="firework-image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
